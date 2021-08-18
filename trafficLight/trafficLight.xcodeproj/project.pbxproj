@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1A178B26CC9DC700BF9C96 /* TrafficLightState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1A178A26CC9DC700BF9C96 /* TrafficLightState.swift */; };
+		BC1A179026CCA00D00BF9C96 /* TrafficLightColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1A178F26CCA00D00BF9C96 /* TrafficLightColors.swift */; };
+		BC1A179226CCA81300BF9C96 /* ColorLightInputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1A179126CCA81300BF9C96 /* ColorLightInputState.swift */; };
 		BC8BE77B26CC91EB00C8A1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8BE77A26CC91EB00C8A1BC /* AppDelegate.swift */; };
 		BC8BE77D26CC91EB00C8A1BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8BE77C26CC91EB00C8A1BC /* SceneDelegate.swift */; };
 		BC8BE77F26CC91EB00C8A1BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8BE77E26CC91EB00C8A1BC /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC1A178A26CC9DC700BF9C96 /* TrafficLightState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightState.swift; sourceTree = "<group>"; };
+		BC1A178F26CCA00D00BF9C96 /* TrafficLightColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightColors.swift; sourceTree = "<group>"; };
+		BC1A179126CCA81300BF9C96 /* ColorLightInputState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLightInputState.swift; sourceTree = "<group>"; };
 		BC8BE77726CC91EB00C8A1BC /* trafficLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trafficLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8BE77A26CC91EB00C8A1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8BE77C26CC91EB00C8A1BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC1A178926CC9D9100BF9C96 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				BC1A178A26CC9DC700BF9C96 /* TrafficLightState.swift */,
+				BC1A179126CCA81300BF9C96 /* ColorLightInputState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		BC1A178E26CC9FFC00BF9C96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC1A178F26CCA00D00BF9C96 /* TrafficLightColors.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BC8BE76E26CC91EB00C8A1BC = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +81,8 @@
 		BC8BE77926CC91EB00C8A1BC /* trafficLight */ = {
 			isa = PBXGroup;
 			children = (
+				BC1A178E26CC9FFC00BF9C96 /* Models */,
+				BC1A178926CC9D9100BF9C96 /* State */,
 				BC8BE77A26CC91EB00C8A1BC /* AppDelegate.swift */,
 				BC8BE77C26CC91EB00C8A1BC /* SceneDelegate.swift */,
 				BC8BE77E26CC91EB00C8A1BC /* ViewController.swift */,
@@ -140,10 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1A179026CCA00D00BF9C96 /* TrafficLightColors.swift in Sources */,
 				BC8BE78526CC91EB00C8A1BC /* trafficLight.xcdatamodeld in Sources */,
 				BC8BE77F26CC91EB00C8A1BC /* ViewController.swift in Sources */,
+				BC1A178B26CC9DC700BF9C96 /* TrafficLightState.swift in Sources */,
 				BC8BE77B26CC91EB00C8A1BC /* AppDelegate.swift in Sources */,
 				BC8BE77D26CC91EB00C8A1BC /* SceneDelegate.swift in Sources */,
+				BC1A179226CCA81300BF9C96 /* ColorLightInputState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
